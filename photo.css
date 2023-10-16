@@ -1,0 +1,71 @@
+:root{
+    font-size: 62.5%;
+}
+body{
+    font-size: 1.6rem;
+    width: min(95%, 75rem);
+    margin-inline: auto;
+    min-height: 100vh;
+}
+
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+img{
+    display: block;
+    max-width: 100%;
+}
+
+
+#cards{
+margin-block: 1.5rem;
+cursor: pointer;
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+ gap: 1em;
+}
+
+
+.picture{
+ width: 500px;
+height: 150px; 
+border-radius: 0.2rem  0.2rem 0px 0px;
+}
+
+
+ #cards p{
+    color: #181515;
+    font-size: 1.3rem;
+    padding: 0.5rem 1.5rem 0.5rem 1.5rem;
+    text-align: center;
+}
+
+
+ #cards .card{
+
+min-height: 100px;
+box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);
+border-radius: 0rem 0rem 0.2rem  0.2rem ;
+border-radius: 0.2rem  0.2rem 0.5rem 0.5rem;
+ }
+
+
+ #cards .card:hover{
+    box-shadow: 2px 2px 9px rgba(0, 0, 0, 0.4);
+ }
+
+ .photoCount{
+    margin-top: 1.5rem;
+ }
+
+.loadingMessage{
+position: absolute;
+top: 50%;
+left: 50%;
+margin-right: -50%;
+transform: translate(-50%, -50%);
+}
+
