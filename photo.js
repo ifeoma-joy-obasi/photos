@@ -1,16 +1,16 @@
 //variables
 let cards = document.querySelector('#cards');
-let body = document.querySelector(".body")
-let errorMsg = document.querySelector(".errorMsg");
-let numberOfImages = document.querySelector(".numberOfImages");
-let titleContainer = document.querySelector(".titleContainer");
+let body = document.querySelector("#body")
+let errorMsg = document.querySelector("#errorMsg");
+let numberOfImages = document.querySelector("#numberOfImages");
+let titleContainer = document.querySelector("#titleContainer");
 
 //fetching data
 const fetchPhotos = async () => {
 
     //loading message
     let span = document.createElement("span");
-    span.setAttribute("class", "loadingMessage");
+    span.setAttribute("class", "loading-message");
     span.innerText = "Loading...";
     body.appendChild(span);
 
@@ -36,7 +36,6 @@ const fetchPhotos = async () => {
                 console.log(cards)
             });
         } else {
-            console.log(response.text());
             throw new Error('sorry could not fetch photos')
         }
     } catch (error) {
@@ -50,7 +49,6 @@ const fetchPhotos = async () => {
             
         } else {
             p.innerText = error.message;
-            console.log(error.message)
         }
     }
     
